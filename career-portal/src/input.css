@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+	html {
+		/* color: #26292c; */
+		@apply text-gray-600;
+	}
+}
+
+@layer components {
+	.nav-item {
+		@apply font-semibold ;
+	}
+	.nav-item:hover{
+		@apply text-secondary;
+	}
+
+	.dropdown {
+		@apply relative;
+	}
+	
+	.dropdown-menu {
+		@apply absolute whitespace-nowrap border  border-border__primary shadow-md  bg-white mt-2 z-50;
+	}
+	.dropdown-menu .nav-item{
+		@apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-secondary border-b border-b-border__primary;
+	}
+
+
+	
+	
+}

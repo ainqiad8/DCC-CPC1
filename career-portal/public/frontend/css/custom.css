@@ -1,0 +1,87 @@
+ :root {
+ 	--primary: #1B98F5;
+ }
+
+ /* navbar  */
+ .dropdown-btn i {
+ 	transition: all 300ms linear;
+ }
+
+ .rotate_180_icon {
+ 	transform: rotate(180deg);
+
+ }
+
+ /* landing page      */
+ .langindPageSwipper {
+ 	width: 100%;
+ 	height: 600px;
+ }
+
+ .langindPageSwipper .swiper-slide {
+ 	text-align: center;
+ 	font-size: 18px;
+ 	background: #fff;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ .langindPageSwipper .swiper-slide img {
+ 	display: block;
+ 	width: 100%;
+ 	height: 100%;
+ 	object-fit: cover;
+ }
+
+ .langindPageSwipper .autoplay-progress {
+ 	position: absolute;
+ 	right: 16px;
+ 	bottom: 16px;
+ 	z-index: 10;
+ 	width: 48px;
+ 	height: 48px;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	font-weight: bold;
+ 	color: var(--primary);
+ }
+
+ .langindPageSwipper .autoplay-progress svg {
+ 	--progress: 0;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0px;
+ 	z-index: 10;
+ 	width: 100%;
+ 	height: 100%;
+ 	stroke-width: 4px;
+ 	stroke: var(--primary);
+ 	fill: none;
+ 	stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+ 	stroke-dasharray: 125.6;
+ 	transform: rotate(-90deg);
+ }
+
+ .langindPageSwipper .swiper-button-next,
+ .langindPageSwipper .swiper-button-prev {
+ 	background-color: rgba(214, 214, 214, 0.8);
+ 	height: 36px;
+ 	width: 36px;
+ 	border-radius: 100%;
+ 	/* border: 2px solid black; */
+ 	color: #000;
+
+ }
+
+ .langindPageSwipper .swiper-button-next::after,
+ .langindPageSwipper .swiper-button-prev::after {
+ 	font-size: 16px;
+ 	font-weight: bold;
+
+ }
+
+ .langindPageSwipper .swiper-pagination-bullet {
+ 	background: var(--primary);
+ }
